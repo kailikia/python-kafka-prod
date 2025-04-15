@@ -2,7 +2,7 @@ from kafka import KafkaProducer
 
 
 producer = KafkaProducer(
-bootstrap_servers=["localhost:29093"]
+bootstrap_servers=["localhost:29092"]
 )
 producer.send("my-topic", value="Hello, World!".encode("utf-8"))
 
